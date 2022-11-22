@@ -232,7 +232,7 @@ main {
   header {
     flex-direction: column;
     background: #ffffff;
-    min-height: 20vh;
+    min-height: 12vh;
   }
 
   header .kosher-img-logo {
@@ -257,5 +257,9 @@ main {
 
   ul li #products-btn:hover {
     font-size: 22px;
+  }
+
+  .main-content h1 span {
+    font-size: 2.5rem;
   }
 }
