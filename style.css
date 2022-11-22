@@ -20,10 +20,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 25px;
-/*   background: linear-gradient(to left, rgba(255,255,255, 0.3) 50%, #ffffff 50%); */
-  background:rgba(255,255,255, 0.3);
-  font-family: 'Exo 2', sans-serif;
-
+  /*   background: linear-gradient(to left, rgba(255,255,255, 0.3) 50%, #ffffff 50%); */
+  background: rgba(255, 255, 255, 0.3);
+  font-family: "Exo 2", sans-serif;
 }
 
 header .kosher-img-logo {
@@ -51,19 +50,19 @@ header ul li a {
 }
 
 ul li #products-btn {
-  background-color: #FF1E00;
+  background-color: #ff1e00;
   color: #ffffff;
   padding: 10px 15px;
   transition: all 0.5s ease-in-out;
 }
 
 header ul li a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 ul li #products-btn:hover {
-    color: #000000;
-    font-size: 18px;
+  color: #000000;
+  font-size: 18px;
 }
 
 main {
@@ -96,14 +95,14 @@ main {
   line-height: 1.25;
   text-shadow: 5px 5px 10px black;
   padding: 0 10%;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .main-content h1 span {
   font-size: 4rem;
   letter-spacing: 1.5px;
   line-height: 0.75;
-  color: #FF1E00;
+  color: #ff1e00;
   position: relative;
   bottom: 25px;
 }
@@ -115,7 +114,7 @@ main {
 }
 
 .main-content a {
-  background: #367E18;
+  background: #367e18;
   color: #ffffff;
   font-size: 28px;
   text-align: center;
@@ -127,13 +126,13 @@ main {
   transition: 0.5s ease-in-out;
   position: relative;
   top: 25px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   transition: all 0.5s ease-in-out;
 }
 
 .main-content a:hover {
-    color: #000000;
-    font-size: 24px;
+  color: #000000;
+  font-size: 24px;
 }
 
 .feature-products {
@@ -143,7 +142,7 @@ main {
   justify-content: center;
   min-height: 70vh;
   min-width: 30vw;
-  background:rgba(255,255,255, 0.35);
+  background: rgba(255, 255, 255, 0.35);
   border-radius: 25px;
 }
 
@@ -154,19 +153,17 @@ main {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  
-
 }
 
 .feature-products .prod-title {
   font-size: 18px;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   letter-spacing: 1px;
   padding: 5px;
 }
 
 .feature-products p {
-  color: #367E18;
+  color: #367e18;
   font-size: 16px;
   font-weight: bold;
   background: #ffffff;
@@ -187,7 +184,7 @@ main {
 }
 
 .feature-products li .view-product:hover {
-    max-width: 65px;
+  max-width: 65px;
 }
 
 .feature-product {
@@ -196,4 +193,69 @@ main {
   min-height: 95px;
   max-height: 95px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+
+  .main-content {
+    background: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .main-content h1 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-content a {
+    max-width: unset;
+    width: auto;
+  }
+
+  .feature-products {
+    min-width: 75vw;
+    min-height: 80vh;
+  }
+
+  .feature-products li {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    flex-direction: column;
+    background: #ffffff;
+    min-height: 20vh;
+  }
+
+  header .kosher-img-logo {
+    width: 30vw;
+  }
+
+  header ul {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header ul li a:hover {
+    color: #000000;
+  }
+
+  header ul #products-btn {
+    background: unset;
+    color: #000000;
+    padding: 0;
+  }
+
+  ul li #products-btn:hover {
+    font-size: 22px;
+  }
 }
