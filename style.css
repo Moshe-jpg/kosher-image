@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-page {
+  background: url("https://r1.ilikewallpaper.net/ipad-wallpapers/download/17739/Dark-patterned-background-ipad-wallpaper-ilikewallpaper_com.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+}
+
+header {
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+/*   background: linear-gradient(to left, rgba(255,255,255, 0.3) 50%, #ffffff 50%); */
+  background:rgba(255,255,255, 0.3);
+  font-family: 'Exo 2', sans-serif;
+
+}
+
+header .kosher-img-logo {
+  border-radius: 15px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header ul li {
+  list-style: none;
+  padding: 0 5px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000000;
+  
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+}
+
+ul li #products-btn {
+  background-color: red;
+  color: #ffffff;
+  padding: 8px 10px;
+}
+
+main {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 70vh;
+  width: 60vw;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.main-content h1 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-shadow: 5px 5px 10px black;
+  padding: 0 10%;
+  font-family: 'Inconsolata', monospace;
+}
+
+.main-content h1 span {
+  font-size: 4rem;
+  letter-spacing: 1.5px;
+  line-height: 0.75;
+  color: red;
+  position: relative;
+  bottom: 25px;
+}
+
+.main-content h1 .copyright {
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+.main-content a {
+  background: #ffffff;
+  color: #000000;
+  font-size: 28px;
+  text-align: center;
+  max-width: 25vw;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  top: 25px;
+}
+
+.feature-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  min-width: 30vw;
+  background:rgba(255,255,255, 0.35);
+  border-radius: 25px;
+}
+
+.feature-products li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  
+
+}
+
+.feature-products .prod-title {
+  font-size: 18px;
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+.feature-products p {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.feature-products li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-products li .view-product {
+  max-width: 35px;
+}
+
+.feature-product {
+  min-width: 55px;
+  max-width: 55px;
+  min-height: 95px;
+  max-height: 95px;
+  border-radius: 15px;
+}
