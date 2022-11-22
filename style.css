@@ -46,15 +46,24 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: #000000;
-  
   border-radius: 25px;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 ul li #products-btn {
-  background-color: red;
+  background-color: #FF1E00;
   color: #ffffff;
-  padding: 8px 10px;
+  padding: 10px 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #ffffff;
+}
+
+ul li #products-btn:hover {
+    color: #000000;
+    font-size: 18px;
 }
 
 main {
@@ -93,7 +102,7 @@ main {
   font-size: 4rem;
   letter-spacing: 1.5px;
   line-height: 0.75;
-  color: red;
+  color: #FF1E00;
   position: relative;
   bottom: 25px;
 }
@@ -105,18 +114,25 @@ main {
 }
 
 .main-content a {
-  background: #ffffff;
-  color: #000000;
+  background: #367E18;
+  color: #ffffff;
   font-size: 28px;
   text-align: center;
   max-width: 25vw;
   height: auto;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 25px;
   text-decoration: none;
   transition: 0.5s ease-in-out;
   position: relative;
   top: 25px;
+  font-family: 'Exo 2', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-content a:hover {
+    color: #000000;
+    font-size: 24px;
 }
 
 .feature-products {
@@ -149,7 +165,7 @@ main {
 }
 
 .feature-products p {
-  color: green;
+  color: #367E18;
   font-size: 16px;
   font-weight: bold;
   background: #ffffff;
@@ -166,6 +182,11 @@ main {
 
 .feature-products li .view-product {
   max-width: 35px;
+  transition: 0.5s ease-in-out;
+}
+
+.feature-products li .view-product:hover {
+    max-width: 65px;
 }
 
 .feature-product {
